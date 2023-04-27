@@ -17,7 +17,13 @@ $colors:(
 
 // fonts
 $fonts : (
-  rg    : 'Inter-Regular'
+  rg    : 'Inter-Regular',
+  md    : 'Inter-Medium',
+  bk    : 'Inter-Black',
+  sb    : 'Inter-SemiBold',
+  lt    : 'Inter-Light',
+  bd    : 'Inter-Bold',
+  eb    : 'Inter-ExtraBold'
 );
 
 @function font($font-name, $font-variant:null) {
