@@ -10,9 +10,9 @@
 
 <body>
     <?php include('include/header.php'); ?>
-    <main class="homePage">
+    <main class="authPage">
 
-        
+
 
     
     </main>
