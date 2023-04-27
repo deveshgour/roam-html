@@ -1,18 +1,5 @@
 .container {
-
-  @media(min-width:1200px) {
-    max-width: 1180px;
-  }
-
-  @media(min-width:1400px) {
-    max-width: 1366px;
-  }
-
-  @media(min-width:1700px) {
-    max-width: 1626px;
-  }
-
-  @include media-breakpoint-down(sm) {
-    max-width: 100%;
+  @media(min-width:1199px) {
+    max-width: 780px;
   }
 }
