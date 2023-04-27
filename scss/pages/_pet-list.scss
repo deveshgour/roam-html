@@ -1,0 +1,19 @@
+.petListBanner{
+    height: 400px;
+    background-color: color(500);
+    background-image: url('#{$imageurl}/pet_list_bg.png');
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 40px;
+    padding: 63px 53px;
+    h1{
+        font-size: 46px;
+    }
+    p{
+        font-size: 16px;
+        margin-top: 28px;
+    }
+    .btn{
+        margin-top: 26px;
+    }
+}
