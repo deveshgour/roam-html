@@ -1,0 +1,19 @@
+.commonForm .form-group{
+    position: relative;
+    margin-bottom: 30px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 8px 19px;
+    padding-top: 21px;
+    min-height: 55px;
+    font-size: 1rem;
+    color: #475F7B;
+    background-color: #FFF;
+    border: 1px solid #DFE3E7;
+    border-radius: .267rem;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

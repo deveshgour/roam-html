@@ -3,8 +3,10 @@ $colors:(
      50: #fff,
     500: #FFD701, 
     600: #7CD4FD,
-    650: #E3F2FF
-    
+    650: #E3F2FF,
+    680: #666666,
+    700:#1D2939 ,
+    900: #000000
 );
 
 @function color($color-name, $color-variant:null) {
