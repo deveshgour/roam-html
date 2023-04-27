@@ -15,7 +15,7 @@
     }
 
     // Login Section
-    .loginSec{
+    .loginSec{padding-bottom: 60px;
         &_inner{
             max-width: 580px;width: 100%;margin: 0 auto;padding: 50px 100px;
             background-color: color(50);border-radius: 30px;
@@ -27,6 +27,17 @@
                 font-size: 36px;line-height: 50px;color: color(900);
             }
         }
-        
+        &_bottom{
+            margin-top: 30px;
+            p{
+                font-size: 16px;line-height: 19px;color: #475467;
+            }
+        }
+        .linkBtn{
+            font-size: 16px;line-height: 19px;color: color(550);@include transition(all 0.4s);text-decoration: none;
+            &:hover{
+                color: color(500);
+            }
+        }
     }
 }

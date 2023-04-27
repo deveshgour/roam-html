@@ -2,6 +2,14 @@
     .form{
         &-group{
             position: relative; margin-bottom: 34px;
+            &.focused{
+                .floating-label {
+                    opacity: 1;
+                    top: -8px;
+                    left: 12px;
+                    font-size: 12px;line-height: 16px;background-color: color(50);padding: 0 4px;
+                }
+            }
         }
         &-control{
             display: block;
@@ -14,26 +22,21 @@
             border: 1px solid color(670);
             border-radius: 4px;
             &:focus {
-                color: #475F7B;
-                background-color: #FFF;
-                border-color: #5A8DEE;
                 outline: 0;
                 box-shadow: none;
             }
         }
+        &-icon{
+            position: absolute;top:18px;right: 16px;font-size: 13px;cursor: pointer;
+        }
     }
-    .floating-label {
-        font-size: 16px;
-        font-weight: 400;
-        color: #475F7B;
-        opacity: 1;
-        top: 16px;
-        left: 20px;
-        pointer-events: none;
-        position: absolute;
-        transition: 240ms;
-        margin-bottom: 0;
-        z-index: 1;
+    .floating{
+        &-label{
+            font-size: 16px;color: #5E6368;line-height: 24px;
+            opacity: 1;top: 12px; left: 16px;
+            pointer-events: none;position: absolute;
+            margin-bottom: 0; z-index: 1;@include transition (all 0.3s);
+        }
     }
     .floating-diff .floating-label{
         opacity: 0;
@@ -41,25 +44,5 @@
     .floating-diff.focused .floating-label{
         opacity: 1;
     }
-    .form-group.focused .floating-label {
-        opacity: 1;
-        color: #7b7f82;
-        top: 4px;
-        left: 19px;
-        font-size: 12px;
-    }
-    .form-group.focused select.form-control{
-        padding-top: 21px;
-    }
-    .float-checkradio{
-        background-color: #FFF;
-        border: 1px solid #DFE3E7;
-        border-radius: .267rem;
-        padding: 8px 19px;
-        transition: 0.3s;
-        min-height: 55px;
-    }
-    .float-checkradio.focused{
-        padding-top: 21px;
-    }
+    
 }
