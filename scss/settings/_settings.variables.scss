@@ -1,0 +1,36 @@
+// color variables
+$colors:(
+     50: #fff,
+    500: #FFD701, 
+    600: #7CD4FD,
+    650: #E3F2FF
+);
+
+@function color($color-name, $color-variant:null) {
+   @if ($color-variant != null) {
+    // map inception
+    @return map-get(map-get($colors, $color-name), $color-variant);
+  } @else {
+    @return map-get($colors, $color-name);
+  }
+}
+
+// fonts
+$fonts : (
+  rg    : 'Inter-Regular'
+);
+
+@function font($font-name, $font-variant:null) {
+   @if ($font-variant != null) {
+    // map inception
+    @return map-get(map-get($fonts, $font-name), $font-variant);
+  } @else {
+    @return map-get($fonts, $font-name);
+  }
+}
+
+
+$imageurl       :    "../images";
+$fonturl        :    "../fonts";
+
+

@@ -1,0 +1,10 @@
+body{
+    font-family: font(rg);font-size:14px;color: color(900);
+}
+
+a{
+    &:hover{text-decoration: none;}
+}
+
+:focus{outline: 0 !important;}
+
