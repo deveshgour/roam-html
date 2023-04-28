@@ -1,5 +1,7 @@
 .petListBanner{
     margin-top: 40px;
+    position: relative;
+    z-index:9;
     &_inner{
         height: 400px;
         background-color: color(500);
@@ -50,6 +52,8 @@
 
 .myPets{
     margin-bottom: 40px;
+    position: relative;
+    top: -10px;
     &_inner{
         background-color: rgba(255,255,255,0.7);
         padding:32px;

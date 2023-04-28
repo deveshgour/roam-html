@@ -1,7 +1,7 @@
 .authPage{
     background-image: url('#{$imageurl}/auth_bg.png');
     height: 100%;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: center;
     position: relative;
     background-attachment: fixed;
@@ -9,7 +9,7 @@
         padding-top: 55px;padding-bottom:35px;
         .authPage_button{
             position: absolute;top:24px;right: 24px;width: 44px;height: 44px;border-radius: 50%;
-            background-color: color(500);color: color(700);
+            background-color: color(500);color: color(700);font-size: 12px;
         }
     }
 
@@ -23,19 +23,104 @@
             margin-bottom: 50px;
             p{font-size: 20px;line-height: 28px;color: color(680);}
             h1{
-                font-size: 36px;line-height: 50px;color: color(900);
+                font-size: 36px;line-height: 50px;color: color(900);    font-family: 'Inter-Medium';
             }
         }
         &_bottom{
             margin-top: 30px;
             p{
-                font-size: 16px;line-height: 19px;color: #475467;
+                font-size: 16px;line-height: 19px;color: #475467;margin-bottom: 17px;
             }
         }
         .linkBtn{
             font-size: 16px;line-height: 19px;color: color(550);@include transition(all 0.4s);text-decoration: none;
             &:hover{
                 color: color(500);
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &_top{
+            padding-top: 45px;padding-bottom:30px;
+        }
+        .loginSec{padding-bottom: 40px;
+            &_inner{
+               padding: 40px 80px;max-width: 525px;
+            }
+            &_txt{
+                margin-bottom: 40px;
+                p{font-size: 18px;line-height: normal;}
+                h1{
+                    font-size: 32px;line-height: 40px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        &_top{
+            padding: 30px 0;
+        }
+        .loginSec{padding-bottom: 30px;
+            &_inner{
+               padding: 30px 60px;max-width: 480px;
+            }
+            &_txt{
+                margin-bottom: 30px;
+                p{font-size: 16px;}
+                h1{
+                    font-size: 28px;line-height: 34px;
+                }
+            }
+            &_bottom{
+                margin-top: 20px;
+                p{
+                    font-size: 14px;line-height: normal;margin-bottom: 10px;
+                }
+            }
+            .linkBtn{
+                font-size: 14px;line-height: normal;
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        &_top{
+            padding: 22px 0;
+            .authPage_button{
+                width: 40px;height: 40px;font-size: 10px;
+            }
+        }
+        .loginSec{
+            &_inner{
+               padding: 25px 40px;max-width: 450px;
+            }
+            &_txt{
+                margin-bottom: 25px;
+                p{font-size: 15px;}
+                h1{
+                    font-size: 24px;line-height: 30px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 0 15px;
+        &_top{
+            padding: 15px 0;
+            .authPage_button{
+                width: 36px;height: 36px;font-size: 9px;top:19px;right: 15px;
+            }
+        }
+        .loginSec{
+            &_inner{
+               padding: 20px;max-width: 100%;
+            }
+            &_txt{
+                margin-bottom: 20px;
+                p{font-size: 14px;}
+                h1{
+                    font-size: 22px;line-height: 26px;
+                }
             }
         }
     }

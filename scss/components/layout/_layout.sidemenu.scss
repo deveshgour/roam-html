@@ -39,7 +39,7 @@
         margin-top: 50px;
         li{
             &:not(:last-child){
-                margin-bottom: 30px;
+                margin-bottom: 25px;
             }
             a{
                 font-size: 40px;
@@ -56,6 +56,25 @@
         display: inline-block;
         margin-top: 100px;
     }
+
+    @include media-breakpoint-down(lg){
+        width: 338px;
+        padding: 30px;
+        background-size: 30%;
+        ul{
+            li{
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+                a{
+                    font-size: 28px;
+                }
+            }
+        }
+        &_logout{
+            margin-top: 40px;
+        }
+    }
 }
 
 body{
@@ -63,15 +82,16 @@ body{
         .sideMenu{
             right: 0;
         }
+        .sideMenubackdrop{
+            opacity: 1;
+            visibility: visible;
+            display: block;
+        }
     }
-    .backdrop{
-        opacity: 1;
-        visibility: visible;
-        display: block;
-    }
+
 }
 
-.backdrop{
+.sideMenubackdrop{
     background-color: rgba(0,0,0,0.3);
     position: fixed;
     height: 100%;
@@ -79,5 +99,6 @@ body{
     top: 0;
     opacity: 0;
     visibility: hidden;
+    z-index: 99;
     display: none;
 }

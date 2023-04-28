@@ -34,4 +34,4 @@
     </ul>
     <a href="javascript:;" class="sideMenu_logout">Logout</a>
 </div>
-<div class="backdrop"></div>
+<div class="sideMenubackdrop" onclick="toggleSideMenu()"></div>
