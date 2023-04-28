@@ -1,0 +1,44 @@
+.addNewPetPage{
+    &_inner{
+        background-color: color(50);border-radius: 20px;padding: 25px 30px;
+    }
+    &-one{
+        .addNewPetPage_details{max-width: 380px;margin: 40px auto 0;}
+    }
+    &-two{
+        .petDetails{
+            background-color: #D1FADF;border-radius: 20px;padding: 25px 30px;margin-top: 40px;
+            &_txt{
+                padding-left: 25px;
+                h3{font-size: 16px;line-height: 24px;margin-bottom: 8px;}
+                p{font-size: 12px;line-height: 18px;color: #101828;margin-bottom: 15px;}
+            }
+            &_price{
+                h6{font-size: 20px;line-height: 30px;}
+                .status{font-size: 12px;line-height: 18px;color: #039855;}
+            }
+        }
+        .uploadPhoto{margin-bottom: 20px;
+            &_img{width: 100px;height: 100px;background-color: #E4E7EC;border-radius: 50%;
+                display: flex;align-items: center;justify-content: center;
+            }
+            label {
+                font-size: 16px;line-height: 24px;color: #4E5BA6;font-weight: 600;
+                text-decoration: underline;text-align: center;cursor: pointer;margin-top: 10px;
+            }
+            input {
+                border: 0;clip: rect(1px, 1px, 1px, 1px);
+                height: 1px;  margin: -1px; overflow: hidden;padding: 0; position: absolute;width: 1px;
+            }
+        }
+        .petForm{
+            &_inner{
+                max-width: 380px;margin: 0 auto;
+                .form-group{
+                    p{font-size: 12px;line-height: 18px;color: #101828;}
+                }
+            }
+        }
+    }
+    
+}
