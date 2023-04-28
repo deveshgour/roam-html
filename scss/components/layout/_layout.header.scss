@@ -1,0 +1,25 @@
+.header{
+    .navbar-nav{
+        .nav-item{
+            height: 44px;
+            width: 44px;
+            background-color: color(50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            @include transition(0.5s);
+            color: color(900);
+            &:not(:last-child){
+                margin-right: 8px;
+            }
+            .icon-bell-icon{
+                font-size: 20px;
+            }
+            &:hover{
+                background-color: color(500);
+                color: color(50);
+            }
+        }
+    }
+}
