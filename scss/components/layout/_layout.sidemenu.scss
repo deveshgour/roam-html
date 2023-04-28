@@ -1,0 +1,83 @@
+.sideMenu{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 480px;
+    background-color: color(50);
+    height: 100%;
+    padding:40px 50px;
+    overflow-y: auto;
+    background-image: url('#{$imageurl}/sidemenu_bg.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    right: -480px;
+    @include transition(0.5s);
+    z-index: 999;
+    &_close{
+        height: 44px;
+        width: 44px;
+        background-color: color(500);
+        display: inline-block;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: color(900);
+        font-size: 20px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        &:hover{
+            color: color(900);
+        }
+    }
+    h2{
+        font-size: 20px;
+    }
+    ul{
+        margin-top: 50px;
+        li{
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+            a{
+                font-size: 40px;
+                color: color(900);
+                &:hover, &.active{
+                    color: #026AA2;
+                }
+            }
+        }
+    }
+    &_logout{
+        font-size: 20px;
+        color: color(900);
+        display: inline-block;
+        margin-top: 100px;
+    }
+}
+
+body{
+    &.showMenu{
+        .sideMenu{
+            right: 0;
+        }
+    }
+    .backdrop{
+        opacity: 1;
+        visibility: visible;
+        display: block;
+    }
+}
+
+.backdrop{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}

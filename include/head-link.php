@@ -6,9 +6,6 @@
 <!-- bootstrap css -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-<!-- icon css -->
-<link href="css/iconmoon.css" rel="stylesheet" type="text/css"/>
-
 <!-- main css -->
 <link rel="stylesheet" href="css/main.min.css" type="text/css">
 

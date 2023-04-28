@@ -21,6 +21,31 @@
     .btn{
         margin-top: 26px;
     }
+    @include media-breakpoint-down(sm){
+        margin-top: 20px;
+        &_inner{
+            padding: 28px 17px 24px;
+            height: auto;
+            background-position: center;
+            background-size: 162%;
+            background-repeat: no-repeat;
+        }
+        h1{
+            font-size: 24px;
+            max-width: 190px;
+        }
+        p{
+            margin-top: 8px;
+            max-width: 190px;
+            font-size: 14px;
+            br{
+                display: none;
+            }
+        }
+        .btn{
+            margin-top: 0px;
+        }
+    }
 }
 
 .myPets{
@@ -35,7 +60,7 @@
             font-family: font(bd);
             font-size: 24px;
         }
-        p{
+        & > p{
             font-size: 18px;
             color: rgba(0, 0, 0, 0.6);;
         }
@@ -43,6 +68,8 @@
     ul{
        display: flex;
        justify-content: center;
+       overflow-x: auto;
+       margin: 0;
     }
     &_item{
         text-align: center;
@@ -109,6 +136,29 @@
             }
             p{
                 color: color(900);
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm){
+        &_inner{
+            padding:30px 15px;
+            h2{
+                font-size: 24px;
+            }
+            & > p{
+                font-size: 18px;
+                margin-bottom: 0px;
+            }
+        }
+        &_item{
+            min-height: auto;
+            padding: 15px 26px;
+            &-add{
+                padding: 15px 26px;
+                a{
+                    padding: 0px;
+                }
             }
         }
     }
