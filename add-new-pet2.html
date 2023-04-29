@@ -4,20 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Roam</title>
-    <?php include('include/head-link.php'); ?>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.min.css" type="text/css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css">
 
 </head>
 
 <body>
-    <?php include('include/header.php'); ?>
-    <main class="addNewPetPage addNewPetPage-two">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="img-fluid" alt="logo" />
+                </a>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <em class="icon-bell-icon"></em>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleSideMenu()"> <em class="icon-menu-icon"></em></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="sideMenu">
+        <a class="sideMenu_close" onclick="toggleSideMenu()"><em class="icon-close-icon"></em></a>
+        <h2>Navigation</h2>
+        <ul class="list-unstyled">
+            <li><a href="javascript:;">Home</a></li>
+            <li><a href="javascript:;">Contact Info</a></li>
+            <li><a href="javascript:;">Settings</a></li>
+            <li><a href="javascript:;">FAQ</a></li>
+            <li><a href="javascript:;">Shop</a></li>
+        </ul>
+        <a href="javascript:;" class="sideMenu_logout">Logout</a>
+    </div>
+    <div class="sideMenubackdrop" onclick="toggleSideMenu()"></div>
+
+    <main class="addNewPetPage addNewPetPage-two py-60 pt-0">
         <div class="container">
             <div class="addNewPetPage_inner">
                 <a href="javascript:void(0)" class="backBtn"><em class="icon-arrow-left-icon"></em> Add New Pet</a>
                 <section class="petDetails">
                     <div class="petDetails_inner d-flex align-items-center">
                         <div class="petDetails_img flex-shrink-0">
-                            <img src="<?php echo IMAGES_URL ?>/add-pet-img.png" alt="pet" class="img-fluid" />
+                            <img src="images/add-pet-img.png" alt="pet" class="img-fluid" />
                         </div>
                         <div class="petDetails_txt">
                             <h3 class="font-sbd">Your Pet Roam Tag is Added</h3>
@@ -36,7 +79,7 @@
                     <div class="petForm_inner">
                         <from class="commonForm">
                             <div class="uploadPhoto mx-auto text-center">
-                                <span class="uploadPhoto_img mx-auto"><img src="<?php echo IMAGES_URL ?>/gallery.png" alt="gallery" class="img-fluid" /></span>
+                                <span class="uploadPhoto_img mx-auto"><img src="images/gallery.png" alt="gallery" class="img-fluid" /></span>
                                 <label><input type="file" name="">Upload Photo</label>
                             </div>
                             <div class="form-group floating-group">
@@ -84,9 +127,10 @@
         </div>
 
     </main>
-    <?php include('include/footer.php') ?>
-    <?php include('include/footer-scripts.php') ?>
-
+    <!-- bootsrtrap -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
