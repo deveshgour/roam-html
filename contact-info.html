@@ -210,70 +210,55 @@
         </div>
     </div>
 
-        <!-- Notification Sidebar -->
+    <!-- Notification Sidebar -->
 
-        <div class="sideMenu sideMenu-form sideMenuNotification">
-            <a class="sideMenu_close" onclick="toggleNotification()"><em class="icon-close-icon"></em></a>
-            <h2>Notifications</h2>
-            <p>You have 4 notifications</p>
+    <div class="sideMenu sideMenu-form sideMenuNotification">
+        <a class="sideMenu_close" onclick="toggleNotification()"><em class="icon-close-icon"></em></a>
+        <h2>Notifications</h2>
+        <p>You have 4 notifications</p>
 
-            <div class="notiBox d-flex align-items-start">
-                <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
-                <div class="notiBox_right">
-                    <h4>Successfully connected!</h4>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+        <div class="notiBox d-flex align-items-start">
+            <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
+            <div class="notiBox_right">
+                <h4>Successfully connected!</h4>
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div class="notiBox d-flex align-items-start">
-                <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
-                <div class="notiBox_right">
-                    <h4>Successfully connected!</h4>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="notiBox d-flex align-items-start">
-                <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
-                <div class="notiBox_right">
-                    <h4>Successfully connected!</h4>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="notiBox d-flex align-items-start">
-                <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
-                <div class="notiBox_right">
-                    <h4>Successfully connected!</h4>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-
         </div>
+        <div class="notiBox d-flex align-items-start">
+            <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
+            <div class="notiBox_right">
+                <h4>Successfully connected!</h4>
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="notiBox d-flex align-items-start">
+            <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
+            <div class="notiBox_right">
+                <h4>Successfully connected!</h4>
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="notiBox d-flex align-items-start">
+            <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
+            <div class="notiBox_right">
+                <h4>Successfully connected!</h4>
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+    </div>
     <!-- bootsrtrap -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-
+    <script type="text/javascript" src="js/main.js"></script>
+    
     <script>
-        function toggleSideMenu() {
-            $('body').toggleClass('showMenu');
-        }
         function toggleAddContact() {
             $('body').toggleClass('showContactForm')
         }
-
         function toggleAddressForm() {
             $('body').toggleClass('showAddresForm')
         }
-        function toggleNotification() {
-            $('body').toggleClass('showNotification')
-        }
-        
-        $('.sideMenubackdrop').click(function () {
-            $('body').removeClass('showMenu');
-            $('body').removeClass('showContactForm');
-            $('body').removeClass('showAddresForm');
-            $('body').removeClass('showNotification');
-        })
-
-
     </script>
 
 </body>
