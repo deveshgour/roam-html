@@ -17,10 +17,23 @@
 </head>
 
 <body>
+    <div class="sideMenu sideMenuMain">
+        <a class="sideMenu_close" onclick="toggleSideMenu()"><em class="icon-close-icon"></em></a>
+        <h2>Navigation</h2>
+        <ul class="list-unstyled">
+            <li><a href="pet-list.html">Home</a></li>
+            <li><a href="contact-info.html">Contact Info</a></li>
+            <li><a href="account-setting.html">Settings</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="javascript:;">Shop</a></li>
+        </ul>
+        <a href="pet-list.html" class="sideMenu_logout">Logout</a>
+    </div>
+    <div class="sideMenubackdrop"></div>
     <main class="mainContent">
         <div class="authPage">
             <div class="authPage_top text-sm-center">
-                <a href="javascript:void(0);" class="authPage_button d-flex align-items-center justify-content-center"><em class="icon-menu-icon"></em></a>
+                <a href="javascript:void(0);" class="authPage_button d-flex align-items-center justify-content-center" onclick="toggleSideMenu()"><em class="icon-menu-icon"></em></a>
                 <a href="javascript:void(0);" class="authPage_logo">
                     <img src="images/logo.png" alt="logo " class="img-fluid">
                 </a>

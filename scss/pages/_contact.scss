@@ -3,6 +3,7 @@
         padding-bottom: 80px;
     }
     .contactBox{
+      
         &:not(:last-child){
             margin-bottom: 40px;
         }
@@ -13,6 +14,19 @@
         p{
             font-size: 14px;
             margin-bottom: 0px;
+        }
+        &_left{
+            padding-right: 15px;
+        }
+    }
+    @include media-breakpoint-down(lg){
+        .card-body{
+            padding-bottom: 30px;
+        }
+        .contactBox{
+            h2{
+                font-size: 18px;
+            }
         }
     }
 }

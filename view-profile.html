@@ -83,7 +83,7 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-4">
                                     <div class="petCnt_boxsm d-flex align-items-center justify-content-center">
                                         <div class="petCnt_boxsm_inner">
                                             <span
@@ -95,7 +95,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-4">
                                     <div class="petCnt_boxsm d-flex align-items-center justify-content-center">
                                         <div class="petCnt_boxsm_inner">
                                             <span
@@ -107,7 +107,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-4">
                                     <div class="petCnt_boxsm d-flex align-items-center justify-content-center">
                                         <div class="petCnt_boxsm_inner">
                                             <span
@@ -207,7 +207,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="aboutBox aboutBox_blue">
+                            <div class="aboutBox aboutBox_orange">
                                 <h3>Behaviour</h3>
                                 <p>Very friendly nature enjoy group of people</p>
                                 <div class="row">
@@ -234,7 +234,43 @@
     </main>
 
 
-    <!-- bootsrtrap -->
+      <!-- Notification Sidebar -->
+
+      <div class="sideMenu sideMenu-form sideMenuNotification">
+        <a class="sideMenu_close" onclick="toggleNotification()"><em class="icon-close-icon"></em></a>
+        <h2>Notifications</h2>
+        <p>You have 4 notifications</p>
+
+        <div class="notiBox d-flex align-items-start">
+            <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
+            <div class="notiBox_right">
+                <h4>Successfully connected!</h4>
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="notiBox d-flex align-items-start">
+            <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
+            <div class="notiBox_right">
+                <h4>Successfully connected!</h4>
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="notiBox d-flex align-items-start">
+            <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
+            <div class="notiBox_right">
+                <h4>Successfully connected!</h4>
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="notiBox d-flex align-items-start">
+            <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
+            <div class="notiBox_right">
+                <h4>Successfully connected!</h4>
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+    </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
@@ -242,8 +278,16 @@
     <script>
         const aboutpetSlider = new Swiper('.aboutpetSlider', {
             loop: true,
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 1.5,
+            spaceBetween: 15,
+              // Responsive breakpoints
+            breakpoints: {
+                575: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                }
+               
+            }
          });
     </script>
 

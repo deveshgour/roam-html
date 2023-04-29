@@ -43,10 +43,6 @@ if($(this).is('select')){
 }
 })
 
-$(function () {
-    $('.datetimepicker').datetimepicker();
-  });
-
   
 function toggleNotification() {
     $('body').toggleClass('showNotification')
