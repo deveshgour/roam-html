@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Roam</title>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.min.css" type="text/css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="img-fluid" alt="logo" />
+                </a>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" onclick="toggleNotification()">
+                            <em class="icon-bell-icon"></em>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleSideMenu()"> <em class="icon-menu-icon"></em></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="sideMenu sideMenuMain">
+        <a class="sideMenu_close" onclick="toggleSideMenu()"><em class="icon-close-icon"></em></a>
+        <h2>Navigation</h2>
+        <ul class="list-unstyled">
+            <li><a href="pet-list.html">Home</a></li>
+            <li><a href="contact-info.html">Contact Info</a></li>
+            <li><a href="javascript:;">Settings</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="javascript:;">Shop</a></li>
+        </ul>
+        <a href="pet-list.html" class="sideMenu_logout">Logout</a>
+    </div>
+    <div class="sideMenubackdrop"></div>
+
+
+    <main class="contactPage">
+        <div class="container">
+            <div class="card card-common">
+                <div class="card-header">
+                    <div class="d-flex">
+                        <div>
+                            <a href="javascript:;" class="btn-back"><em class="icon-arrow-left-icon"></em></a>
+                        </div>
+                        <div>
+                            <h1>Contact Information</h1>
+                            <p>Your contact information will be displayed on all of your pets profiles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="contactBox d-flex align-items-center justify-content-between">
+                        <div class="contactBox_left">
+                            <h2>Privacy Control</h2>
+                            <p>Only display contact information when your pet is lost.</p>
+                        </div>
+                        <div class="contactBox_right">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactBox d-flex align-items-center justify-content-between">
+                        <div class="contactBox_left">
+                            <h2>Phone number</h2>
+                            <p>Only display contact information when your pet is lost.</p>
+                        </div>
+                        <div class="contactBox_right">
+                            <a class="btn btn-primary" href="javascript:;" onclick="toggleAddContact()">Add</a>
+                        </div>
+                    </div>
+                    <div class="contactBox d-flex align-items-center justify-content-between">
+                        <div class="contactBox_left">
+                            <h2>Address</h2>
+                            <p>Add a phone number so people can reach you if your pet is lost.</p>
+                        </div>
+                        <div class="contactBox_right">
+                            <a class="btn btn-primary" href="javascript:;" onclick="toggleAddressForm()">Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Add Phone Number Form -->
+    <div class="sideMenu sideMenu-form sideMenuContactForm">
+        <a class="sideMenu_close" onclick="toggleAddContact()"><em class="icon-close-icon"></em></a>
+        <h2>Add new phone number</h2>
+        <p>Enter your phone number and add a title for it.</p>
+
+        <img src="images/contact_bg.png" class="img-fluid d-block mx-auto" alt="contact" />
+        <div class="commonForm">
+            <from>
+                <div class="form-group floating-group">
+                    <label class="floating-label">Title</label>
+                    <input type="text" class="form-control floating-control" />
+                </div>
+                
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group select2 w-100 floating-group">
+                            <label class="floating-label">Country</label>
+                            <select name="" id="" class="form-control customSelect floating-control">
+                                <option value="">Code</option>
+                                <option value="1" selected>+1</option>
+                            </select>
+                            <em class="icon-arrow_down form-icon"></em>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="form-group floating-group">
+                            <label class="floating-label">Phone Number</label>
+                            <input type="text" class="form-control floating-control" />
+                        </div>
+                    </div>  
+                </div>
+            
+                <button class="btn btn-primary w-100">Add Phone Number</button>
+            </from>
+        </div>
+    </div>
+
+    <!-- Add Address Form -->
+
+    <div class="sideMenu sideMenu-form sideMenuAddressForm">
+        <a class="sideMenu_close" onclick="toggleAddressForm()"><em class="icon-close-icon"></em></a>
+        <h2>Add new address</h2>
+        <p>Enter your address and add a title for it.</p>
+     
+        <div class="commonForm">
+            <from>
+                <div class="form-group floating-group">
+                    <label class="floating-label">Title</label>
+                    <input type="text" class="form-control floating-control" />
+                </div>
+
+                <div class="form-group select2 w-100 floating-group">
+                    <label class="floating-label">Country/ Region</label>
+                    <select name="" id="" class="form-control customSelect floating-control">
+                        <option value="">Select</option>
+                        <option value="1" selected>Option 1</option>
+                    </select>
+                    <em class="icon-arrow_down form-icon"></em>
+                </div>
+
+                <div class="form-group floating-group">
+                    <label class="floating-label">Address</label>
+                    <input type="text" class="form-control floating-control"/>
+                </div>
+
+                <div class="form-group floating-group">
+                    <label class="floating-label">Apartment, Suit, etc</label>
+                    <input type="text" class="form-control floating-control" />
+                </div>
+                
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group select2 w-100 floating-group">
+                            <label class="floating-label">State</label>
+                            <select name="" id="" class="form-control customSelect floating-control">
+                                <option value="">Select</option>
+                                <option value="1" selected>State 1</option>
+                            </select>
+                            <em class="icon-arrow_down form-icon"></em>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group select2 w-100 floating-group">
+                            <label class="floating-label">City</label>
+                            <select name="" id="" class="form-control customSelect floating-control">
+                                <option value="">Select</option>
+                                <option value="1" selected>City 1</option>
+                            </select>
+                            <em class="icon-arrow_down form-icon"></em>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="form-group floating-group">
+                    <label class="floating-label">Zip code</label>
+                    <input type="text" class="form-control floating-control"/>
+                </div>
+                
+            
+                <button class="btn btn-primary w-100">Create Address</button>
+            </from>
+        </div>
+    </div>
+
+        <!-- Notification Sidebar -->
+
+        <div class="sideMenu sideMenu-form sideMenuNotification">
+            <a class="sideMenu_close" onclick="toggleNotification()"><em class="icon-close-icon"></em></a>
+            <h2>Notifications</h2>
+            <p>You have 4 notifications</p>
+
+            <div class="notiBox d-flex align-items-start">
+                <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
+                <div class="notiBox_right">
+                    <h4>Successfully connected!</h4>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="notiBox d-flex align-items-start">
+                <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
+                <div class="notiBox_right">
+                    <h4>Successfully connected!</h4>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="notiBox d-flex align-items-start">
+                <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
+                <div class="notiBox_right">
+                    <h4>Successfully connected!</h4>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="notiBox d-flex align-items-start">
+                <div class="notiBox_left"><span class="d-flex align-items-center justify-content-center"><em class="icon-bell-icon"></em></span></div>
+                <div class="notiBox_right">
+                    <h4>Successfully connected!</h4>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+        </div>
+    <!-- bootsrtrap -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function toggleSideMenu() {
+            $('body').toggleClass('showMenu');
+        }
+        function toggleAddContact() {
+            $('body').toggleClass('showContactForm')
+        }
+
+        function toggleAddressForm() {
+            $('body').toggleClass('showAddresForm')
+        }
+        function toggleNotification() {
+            $('body').toggleClass('showNotification')
+        }
+        
+        $('.sideMenubackdrop').click(function () {
+            $('body').removeClass('showMenu');
+            $('body').removeClass('showContactForm');
+            $('body').removeClass('showAddresForm');
+            $('body').removeClass('showNotification');
+        })
+
+
+    </script>
+
+</body>
+
+</html>
