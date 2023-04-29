@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Roam</title>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.min.css" type="text/css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="img-fluid" alt="logo" />
+                </a>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <em class="icon-bell-icon"></em>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleSideMenu()"> <em class="icon-menu-icon"></em></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="sideMenu">
+        <a class="sideMenu_close" onclick="toggleSideMenu()"><em class="icon-close-icon"></em></a>
+        <h2>Navigation</h2>
+        <ul class="list-unstyled">
+            <li><a href="javascript:;">Home</a></li>
+            <li><a href="javascript:;">Contact Info</a></li>
+            <li><a href="javascript:;">Settings</a></li>
+            <li><a href="javascript:;">FAQ</a></li>
+            <li><a href="javascript:;">Shop</a></li>
+        </ul>
+        <a href="javascript:;" class="sideMenu_logout">Logout</a>
+    </div>
+    <div class="sideMenubackdrop" onclick="toggleSideMenu()"></div>
+
+
+    <main class="petDetail">
+        <div class="container">
+            <div class="card card-common">
+                <div class="card-header card-header-big">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex">
+                            <div>
+                                <a href="javascript:;" class="btn-back"><em class="icon-arrow-left-icon"></em></a>
+                            </div>
+                            <div>
+                                <h1>View Profile</h1>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="btn btn-primary">Edit Profile</a>
+                    </div>
+                    <div class="petDetail_img d-flex align-items-center justify-content-center">
+                        <img src="images/pet-2.jpg" class="img-fluid" alt="pet" />
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="petDetail_inner">
+                        <div class="petCnt text-center">
+                            <h2>Jimmy</h2>
+                            <div class="petCnt_type">Golden Retriever</p>
+                                <p>You can attach multiple roamtag to a single pet. if you remove a tag from a pet you
+                                    will need to activate it again</p>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="petCnt_boxsm d-flex align-items-center justify-content-center">
+                                        <div class="petCnt_boxsm_inner">
+                                            <span
+                                                class="petCnt_boxsm_icon d-flex align-items-center justify-content-center">
+                                                <em class="icon-cake"></em>
+                                            </span>
+                                            <div class="petCnt_boxsm_title">Age</div>
+                                            <div class="petCnt_boxsm_subtitle">5yr</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="petCnt_boxsm d-flex align-items-center justify-content-center">
+                                        <div class="petCnt_boxsm_inner">
+                                            <span
+                                                class="petCnt_boxsm_icon d-flex align-items-center justify-content-center">
+                                                <em class="icon-gender"></em>
+                                            </span>
+                                            <div class="petCnt_boxsm_title">Gender</div>
+                                            <div class="petCnt_boxsm_subtitle">Male</div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="petCnt_boxsm d-flex align-items-center justify-content-center">
+                                        <div class="petCnt_boxsm_inner">
+                                            <span
+                                                class="petCnt_boxsm_icon d-flex align-items-center justify-content-center">
+                                                <em class="icon-weight"></em>
+                                            </span>
+                                            <div class="petCnt_boxsm_title">Weight</div>
+                                            <div class="petCnt_boxsm_subtitle">5Kg</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-common">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="card-header-left">
+                                    <h2>Owner</h2>
+                                </div>
+                                <div class="card-header-right">
+                                    <a class="card-header-right-btn" href="#"><em class="icon-phone"></em></a>
+                                    <a class="card-header-right-btn" href="#"><em class="icon-chat"></em></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="ownerInfo d-flex align-items-center">
+                                    <div class="ownerInfo_img d-flex align-items-center justify-content-center">
+                                        <img src="images/hg.png" class="img-fluid">
+                                    </div>
+                                    <div class="ownerInfo_cnt">
+                                        <h3>Mr. Hugo Geerts</h3>
+                                        <p>+ 1 343 7767 888</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-common">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="card-header-left">
+                                    <h2>Address</h2>
+                                </div>
+                                <div class="card-header-right">
+                                    <a class="card-header-right-btn" href="#"><em class="icon-map"></em></a>
+                                    <a class="card-header-right-btn" href="#"><em class="icon-copy"></em></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="ownerInfo_address">1 Epperson Avenue, Cookeville,tn, 38506  United States</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider main container -->
+                    <div class="swiper aboutpetSlider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="aboutBox aboutBox_blue">
+                                <h3>Behaviour</h3>
+                                <p>Very friendly nature enjoy group of people</p>
+                                <div class="row">
+                                    <div class="col aboutBox_info">
+                                        <h4>Kids</h4>
+                                        <p>Yes</p>
+                                    </div>
+                                    <div class="col aboutBox_info">
+                                        <h4>Dogs</h4>
+                                        <p>Yes</p>
+                                    </div>
+                                    <div class="col aboutBox_info">
+                                        <h4>Cate</h4>
+                                        <p>Yes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="aboutBox aboutBox_green">
+                                <h3>Health</h3>
+                                <p>Health is good he likes to go out in the morning.</p>
+                                <div class="row">
+                                    <div class="col aboutBox_info">
+                                        <h4>Allergies</h4>
+                                        <p>None</p>
+                                    </div>
+                                    <div class="col aboutBox_info">
+                                        <h4>Medicine</h4>
+                                        <p>None</p>
+                                    </div>
+                                    <div class="col aboutBox_info">
+                                        <h4>Neutered</h4>
+                                        <p>Yes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="aboutBox aboutBox_blue">
+                                <h3>Behaviour</h3>
+                                <p>Very friendly nature enjoy group of people</p>
+                                <div class="row">
+                                    <div class="col aboutBox_info">
+                                        <h4>Kids</h4>
+                                        <p>Yes</p>
+                                    </div>
+                                    <div class="col aboutBox_info">
+                                        <h4>Dogs</h4>
+                                        <p>Yes</p>
+                                    </div>
+                                    <div class="col aboutBox_info">
+                                        <h4>Cate</h4>
+                                        <p>Yes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </main>
+
+
+    <!-- bootsrtrap -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+
+    <script>
+
+        function toggleSideMenu() {
+            $('body').toggleClass('showMenu')
+        }
+        const aboutpetSlider = new Swiper('.aboutpetSlider', {
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 20,
+         });
+
+    </script>
+
+</body>
+
+</html>

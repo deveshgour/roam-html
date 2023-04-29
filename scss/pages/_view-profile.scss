@@ -1,0 +1,169 @@
+.petDetail{
+    color: #101828;
+    .card{
+        &-common{
+            .card-header{
+                &-big{
+                    height: 177px;
+                    background-color: #7CD4FD;
+                }
+            }
+            .card-body{
+                padding-top: 100px;
+                &-inner{
+                    max-width: 50px;
+                    margin: 0 auto;
+                }
+            }
+        }
+      
+    }
+    &_img{
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        background-color: color(500);
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    &_inner{
+        max-width: 580px;
+        margin: 0 auto;
+        .card-common{
+            border: none;
+            margin-top:35px;
+            margin-bottom: 25px;
+            border: 1px solid #D1E9FF;
+            border-radius: 20px;
+          
+            .card-header{
+                    padding: 8px 24px;
+                    background-color: #D1E9FF;
+                    border-radius: 20px 20px 0px 0px;
+                    &-left{
+                            h2{
+                                font-size: 16px;
+                                font-family: font(sb);
+                                margin: 0;
+                            }
+                    }
+                    &-right{
+                        &-btn{
+                            font-size: 18px;
+                            color: #065986;
+                            &:not(:last-child){
+                                margin-right: 48px;
+                            }
+                        }
+                    }
+            }
+            .card-body{
+                padding: 24px;
+                background: #F0F9FF;
+            }
+        }
+        .ownerInfo{
+            &_img{
+                height: 72px;
+                width: 72px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: #7CD4FD;
+                margin-right: 27px;
+            }
+            &_cnt{
+                h3{
+                    font-size: 20px;
+                    font-family: font(sb);
+                }
+                p{
+                    font-size: 14px;
+                    margin-bottom: 0px;
+                }
+            }
+            &_address{
+                font-size: 20px;
+                color: #101828;
+            }
+        }
+    }
+    .petCnt{
+        h2{
+            font-size: 36px;
+            font-family: font(md);
+        }
+        &_type{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+        }
+        &_boxsm{
+            background: #F0F9FF;
+            border: 1px solid #D1E9FF;
+            border-radius: 20px;
+            padding: 13px;
+            &_icon{
+                height: 44px;
+                width: 44px;
+                border-radius: 50%;
+                background-color: #E0F2FE;
+                margin-bottom: 3px;
+                color: #026AA2;
+                font-size: 18px;
+            }
+            &_title{
+                font-size: 14px;
+            }
+            &_subtitle{
+                font-size: 24px;
+                font-family: font(sb);
+                margin-top: 4px;
+            }
+        }
+    }
+    .aboutpetSlider{
+        margin-top: 40px;
+    }
+    .aboutBox{
+        border-radius: 20px;
+        padding: 12px 24px;
+        background-image: url('#{$imageurl}/aboutBox_bg.png');
+        background-position: top right;
+        background-repeat: no-repeat;
+    
+        &_blue{
+            background-color: #F4EBFF;
+        }
+        &_green{
+            background-color: #D1FADF;
+        }
+        &_orange{
+
+        }
+        h3{
+            font-size: 16px;
+            font-family: font(sb);
+        }
+        p{
+            font-size: 18px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+        }
+        &_info{
+            margin-top: 26px;
+            h4{
+                font-size: 14px;
+            }
+            p{
+                font-size: 18px;
+                margin-top: 5px;
+                font-family: font(sb);
+                color: #101828;
+            }
+        }
+    }
+}
