@@ -89,6 +89,10 @@
             }
         } 
     }
+    .btn-link{
+        color: #293056;
+        font-family: font(sb);
+    }
     @include media-breakpoint-down(xl) {
         .form{
             &-group{

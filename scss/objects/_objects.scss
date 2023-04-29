@@ -22,3 +22,16 @@
     font-size: 15px;line-height: 18px;
   }
 }
+.deleteBtn{
+  font-size: 16px;line-height: 24px;color: #F04438;text-decoration: underline;
+  font-weight: 600;@include transition(all 0.4s);
+  &:hover{
+    color: color(550);text-decoration: underline;
+  }
+  @include media-breakpoint-down(xl) {
+    font-size: 15px;line-height: normal;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
+}
