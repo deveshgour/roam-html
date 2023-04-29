@@ -13,7 +13,7 @@
         @include transition(all 0.5s);
         &:hover,&:focus,&:active,&:not(:disabled):not(.disabled):active {
             border-color:darken(color(500), 8%);box-shadow: none;
-            background: darken(color(500), 8%);color:color(50);
+            background: darken(color(500), 8%);color:color(900);
         }
     }
 

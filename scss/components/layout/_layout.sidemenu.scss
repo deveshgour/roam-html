@@ -16,7 +16,7 @@
     &_close{
         height: 44px;
         width: 44px;
-        background-color: color(500);
+        // background-color: color(500);
         display: inline-block;
         border-radius: 50%;
         display: flex;
@@ -34,6 +34,10 @@
     }
     h2{
         font-size: 20px;
+        font-family: font(sb);
+    }
+    p{
+        font-size: 14px;
     }
     ul{
         margin-top: 50px;
@@ -56,7 +60,13 @@
         display: inline-block;
         margin-top: 100px;
     }
-
+    &-form{
+        background-image: none;
+        .commonForm{
+            margin-top: 40px;
+        }
+    }
+  
     @include media-breakpoint-down(lg){
         width: 338px;
         padding: 30px;
@@ -78,14 +88,31 @@
 }
 
 body{
-    &.showMenu{
-        .sideMenu{
-            right: 0;
-        }
+    &.showMenu, &.showContactForm, &.showAddresForm, &.showNotification{
         .sideMenubackdrop{
             opacity: 1;
             visibility: visible;
             display: block;
+        }
+    }
+    &.showMenu{
+        .sideMenuMain{
+            right: 0;
+        }
+    }
+    &.showContactForm{
+        .sideMenuContactForm{
+            right: 0;
+        }
+    }
+    &.showAddresForm{
+        .sideMenuAddressForm{
+            right: 0;
+        }
+    }
+    &.showNotification{
+        .sideMenuNotification{
+            right: 0;
         }
     }
 
@@ -101,4 +128,37 @@ body{
     visibility: hidden;
     z-index: 99;
     display: none;
+}
+
+.sideMenuNotification{
+    .notiBox{
+        background: #F2F4F7;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        padding: 12px;
+        &:not(:last-child){
+            margin-bottom: 4px;
+        }
+        &_left{
+            margin-right: 20px;
+            span{
+                display: inline-block;
+                height: 48px;
+                width: 48px;
+                background: #E0F2FE;
+                border-radius: 50%;
+                font-size: 20px;
+            }
+        }
+        &_right{
+            h4{
+                font-size: 14px;
+                font-family: font(sb);
+            }
+            p{
+                font-size: 12px;
+                line-height: 18px   ;
+            }
+        }
+    }
 }
