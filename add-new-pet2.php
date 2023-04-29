@@ -62,7 +62,7 @@
                             </div>
                             <div class="form-group floating-group">
                                 <label class="floating-label">Birthdate (Estimate if necessary)</label>
-                                <input type="date" class="form-control floating-control" />
+                                <input type="" class="form-control floating-control" />
                             </div>
                             <div class="form-group">
                                 <div class="radioBtns">
