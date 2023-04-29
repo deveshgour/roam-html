@@ -43,6 +43,17 @@ if($(this).is('select')){
 }
 })
 
+function toggleNotification() {
+    $('body').toggleClass('showNotification')
+}
+
+$('.sideMenubackdrop').click(function () {
+    $('body').removeClass('showMenu');
+    $('body').removeClass('showContactForm');
+    $('body').removeClass('showAddresForm');
+    $('body').removeClass('showNotification');
+})
+
 
 
 
