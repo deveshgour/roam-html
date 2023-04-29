@@ -43,9 +43,11 @@ if($(this).is('select')){
 }
 })
 
+$(function () {
+    $('.datetimepicker').datetimepicker();
+  });
 
-
-
+  
 
 
 
