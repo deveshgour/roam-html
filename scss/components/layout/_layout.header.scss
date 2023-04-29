@@ -17,6 +17,11 @@
             .icon-bell-icon{
                 font-size: 20px;
             }
+            .nav-link{
+                display: flex;
+                align-items: center;
+                padding: 0;
+            }
             &:hover{
                 background-color: color(500);
                 color: color(50);
