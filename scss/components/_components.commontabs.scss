@@ -46,4 +46,11 @@
             }
         }
     }
+    @include media-breakpoint-down(xs){
+        &.nav{
+            .nav-item:not(:last-child){
+                margin-right: 20px;
+            }
+        }
+    }
 }

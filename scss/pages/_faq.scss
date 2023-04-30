@@ -47,6 +47,35 @@
                 padding: 20px 15px 15px;
             }
         }
+        @include media-breakpoint-down(sm){
+            margin-top: 15px;
+            .card-header{
+                h1{
+                    font-size: 16px;
+                }
+            }
+            .card-header, .card-body, .card-footer{
+                padding: 20px 15px 15px;
+            }
+        }
+        @media(max-width: 380px){
+            margin-top: 15px;
+            .card-header{
+                h1{
+                    font-size: 15px;margin-bottom: 0;
+                }
+                p{font-size: 13px;margin-top: 5px;}
+            }
+            .card_inner{
+                display: block !important;
+                .btn-back{
+                    margin-right: 0;margin-bottom: 5px;
+                }
+            }
+            .card-header, .card-body, .card-footer{
+                padding: 15px;
+            }
+        }
     }
 }
 
@@ -113,5 +142,6 @@
                 padding-left: 40px;
             }
         }
+
     }
 }
