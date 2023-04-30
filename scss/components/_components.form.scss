@@ -13,6 +13,12 @@
             .custom-label{
                 font-size: 16px;line-height: 24px;color: #1D2939;margin-bottom: 12px;
             }
+            .formTxt{
+                font-size: 12px;line-height: 16px;color: #5E6368;margin-top: 3px;
+            }
+            .checkbox-label{
+                font-size: 14px;line-height: 20px;color: color(900);display: inline-flex;
+            }
         }
         &-control{
             display: block;
@@ -35,7 +41,48 @@
         &-icon{
             position: absolute;top:14px;right: 16px;font-size: 20px;cursor: pointer;
         }
+        &-checkbox {
+            position: absolute;
+            opacity: 0;
+            & + label {
+              position: relative;
+              cursor: pointer;
+              padding: 0;
+            }
+            & + label:before {
+              content: '';
+              margin-right: 10px;
+              display: inline-block;
+              vertical-align: text-top;
+              width: 20px;
+              height: 20px;
+              background: #F4F4F4;
+              border: 1px solid #D9D9D9;
+              flex-shrink: 0;position: relative;top: 5px;
+            }
+            &:checked + label:before {
+              background: color(500);
+            }
+            &:checked + label:after {
+              content: '';
+              position: absolute;
+              left: 5px;
+              top: 13px;
+              background: color(50);
+              width: 2px;
+              height: 2px;
+              box-shadow: 
+                2px 0 0 white,
+                4px 0 0 white,
+                4px -2px 0 white,
+                4px -4px 0 white,
+                4px -6px 0 white,
+                4px -8px 0 white;
+              transform: rotate(45deg);
+            }
+        }
         
+          
     }
     .floating{
         &-label{

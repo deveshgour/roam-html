@@ -162,3 +162,14 @@ body{
         }
     }
 }
+
+.sideMenuContactForm{
+    &_txt{
+        padding-left: 30px;
+        a{color: color(900);text-decoration:underline;
+            &:hover{
+                color: color(900);
+            }
+        }
+    }
+}

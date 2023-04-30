@@ -68,35 +68,86 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <div class="contactBox d-flex align-items-center justify-content-between">
-                        <div class="contactBox_left">
-                            <h2>Privacy Control</h2>
-                            <p>Only display contact information when your pet is lost.</p>
+                    <div class="contactBox">
+                        <div class="d-flex align-items-center justify-content-between contactBox_inner">
+                            <div class="contactBox_left">
+                                <h2>Privacy Control</h2>
+                                <p>Only display contact information when your pet is lost.</p>
+                            </div>
+                            <div class="contactBox_right">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked">
+                                    <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="contactBox_right">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch"
-                                    id="flexSwitchCheckChecked" checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                        
+                    </div>
+                    <div class="contactBox">
+                        <div class="d-flex align-items-center justify-content-between contactBox_inner">
+                            <div class="contactBox_left">
+                                <h2>Phone number</h2>
+                                <p>Only display contact information when your pet is lost.</p>
+                            </div>
+                            <div class="contactBox_right">
+                                <a class="btn btn-primary" href="javascript:;" onclick="toggleAddContact()">Add</a>
+                            </div>
+                        </div>
+                        <div class="contactBox_bottom mt-3 mt-lg-4">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="contactBox_card d-flex justify-content-between">
+                                        <div class="contactBox_card_txt">
+                                            <h3>Mom</h3>
+                                            <p>+91 989892983</p>
+                                        </div>
+                                        <div class="contactBox_card_link">
+                                            <a href="#!"><img src="images/delete-icon.svg" class="img-fluid" alt="delete-icon" /></a>
+                                            <a href="#!" class="ps-2"><img src="images/edit-icon.svg" class="img-fluid" alt="edit-icon" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="contactBox_card d-flex justify-content-between">
+                                        <div class="contactBox_card_txt">
+                                            <h3>Dad</h3>
+                                            <p>+91 989892983</p>
+                                        </div>
+                                        <div class="contactBox_card_link">
+                                            <a href="#!"><img src="images/delete-icon.svg" class="img-fluid" alt="delete-icon" /></a>
+                                            <a href="#!" class="ps-2"><img src="images/edit-icon.svg" class="img-fluid" alt="edit-icon" /></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="contactBox d-flex align-items-center justify-content-between">
-                        <div class="contactBox_left">
-                            <h2>Phone number</h2>
-                            <p>Only display contact information when your pet is lost.</p>
+                    <div class="contactBox">
+                        <div class="d-flex align-items-center justify-content-between contactBox_inner">
+                            <div class="contactBox_left">
+                                <h2>Address</h2>
+                                <p>Add a phone number so people can reach you if your pet is lost.</p>
+                            </div>
+                            <div class="contactBox_right">
+                                <a class="btn btn-primary" href="javascript:;" onclick="toggleAddressForm()">Add</a>
+                            </div>
                         </div>
-                        <div class="contactBox_right">
-                            <a class="btn btn-primary" href="javascript:;" onclick="toggleAddContact()">Add</a>
-                        </div>
-                    </div>
-                    <div class="contactBox d-flex align-items-center justify-content-between">
-                        <div class="contactBox_left">
-                            <h2>Address</h2>
-                            <p>Add a phone number so people can reach you if your pet is lost.</p>
-                        </div>
-                        <div class="contactBox_right">
-                            <a class="btn btn-primary" href="javascript:;" onclick="toggleAddressForm()">Add</a>
+                        <div class="contactBox_bottom mt-3 mt-lg-4">
+                            <div class="row g-3">
+                                <div class="col-sm-12">
+                                    <div class="contactBox_card d-flex justify-content-between">
+                                        <div class="contactBox_card_txt">
+                                            <h3>Address</h3>
+                                            <p>1 Epperson Avenue, Cookeville,tn, 38506  United States</p>
+                                        </div>
+                                        <div class="contactBox_card_link">
+                                            <a href="#!"><img src="images/delete-icon.svg" class="img-fluid" alt="delete-icon" /></a>
+                                            <a href="#!" class="ps-2"><img src="images/edit-icon.svg" class="img-fluid" alt="edit-icon" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -108,39 +159,53 @@
     <!-- Add Phone Number Form -->
     <div class="sideMenu sideMenu-form sideMenuContactForm">
         <a class="sideMenu_close" onclick="toggleAddContact()"><em class="icon-close-icon"></em></a>
-        <h2>Add new phone number</h2>
-        <p>Enter your phone number and add a title for it.</p>
-
-        <img src="images/contact_bg.png" class="img-fluid d-block mx-auto" alt="contact" />
-        <div class="commonForm">
-            <from>
-                <div class="form-group floating-group">
-                    <label class="floating-label">Title</label>
-                    <input type="text" class="form-control floating-control" />
-                </div>
-                
-                <div class="row">
-                    <div class="col-4">
-                        <div class="form-group select2 w-100 floating-group">
-                            <label class="floating-label">Country</label>
-                            <select name="" id="" class="form-control customSelect floating-control">
-                                <option value="">Code</option>
-                                <option value="1" selected>+1</option>
-                            </select>
-                            <em class="icon-arrow_down form-icon"></em>
+        <div class=" d-flex flex-column justify-content-between h-100">
+            <div>
+                <h2>Add new phone number</h2>
+                <p>Enter your phone number to receive notification alerts when your pet's ByteTag is scanned.</p>
+                <div class="commonForm">
+                    <from>                
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-group select2 w-100 floating-group">
+                                    <label class="floating-label">Country</label>
+                                    <select name="" id="" class="form-control customSelect floating-control">
+                                        <option value="">Code</option>
+                                        <option value="1" selected>+1</option>
+                                    </select>
+                                    <em class="icon-arrow_down form-icon"></em>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="form-group floating-group">
+                                    <label class="floating-label">Phone Number</label>
+                                    <input type="text" value="1234598989" class="form-control floating-control" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                    <label for="styled-checkbox-1" class="checkbox-label">You agree to receive automated notification messages from ByteTag. This agreement isn't a condition of any purchase. Reply STOP to end or HELP for help.</label>
+                                </div>
+                            </div> 
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">
+                                    <label for="styled-checkbox-2" class="checkbox-label">You agree to receive automated promotional messages from ByteTag. This agreement isn't a condition of any purchase. 4 Msgs/month. Reply STOP to end or HELP for help.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p class="sideMenuContactForm_txt">By checking either box, you also agree to the  <br><a href="#!"> Terms of Service </a> and <a href="#!">Privacy Policy</a>.
+                                </p>
+                            </div>   
                         </div>
-                    </div>
-                    <div class="col-8">
-                        <div class="form-group floating-group">
-                            <label class="floating-label">Phone Number</label>
-                            <input type="text" class="form-control floating-control" />
-                        </div>
-                    </div>  
+                    </from>
                 </div>
-            
-                <button class="btn btn-primary w-100">Add Phone Number</button>
-            </from>
+            </div>
+            <button class="btn btn-primary w-100">Edit Phone Number</button>
         </div>
+        
     </div>
 
     <!-- Add Address Form -->
