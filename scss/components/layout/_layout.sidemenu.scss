@@ -73,9 +73,6 @@
         padding: 30px;
         ul{ 
             li{
-                &:not(:last-child){
-                    margin-bottom: 30px;
-                }
                 a{
                     font-size: 22px;
                 }
@@ -86,16 +83,19 @@
         width: 338px;
         padding: 30px;
         background-size: 50%;
-        ul{ margin-top: 70px;
+        ul{ margin-top: 50px;
             li{
                 &:not(:last-child){
-                    margin-bottom: 25px;
+                    margin-bottom: 40px;
                 }
                 a{
                     font-size: 20px;
                 }
             }
         }
+    }
+    @media(max-width: 380px){
+        width: 315px;padding: 25px 20px
     }
 }
 
