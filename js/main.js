@@ -55,6 +55,10 @@ $('.sideMenubackdrop').click(function () {
     $('body').removeClass('showNotification');
 })
 
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
 
 
 

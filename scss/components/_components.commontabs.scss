@@ -17,4 +17,33 @@
             }
         }
     }
+    @include media-breakpoint-down(lg){
+        margin: 30px auto;
+        &.nav{
+            padding-bottom:10px;
+            .nav-item:not(:last-child){
+                margin-right: 50px;
+            }
+            .nav-link{
+                font-size: 15px;line-height: normal;
+                &.active{
+                    &::after{
+                        bottom: -10px;
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        margin: 20px auto;
+        &.nav{
+            padding-bottom:10px;
+            .nav-item:not(:last-child){
+                margin-right: 30px;
+            }
+            .nav-link{
+                font-size: 14px;
+            }
+        }
+    }
 }
