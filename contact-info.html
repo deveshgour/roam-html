@@ -104,7 +104,7 @@
                                         </div>
                                         <div class="contactBox_card_link">
                                             <a href="#!"><img src="images/delete-icon.svg" class="img-fluid" alt="delete-icon" /></a>
-                                            <a href="#!" class="ps-2"><img src="images/edit-icon.svg" class="img-fluid" alt="edit-icon" /></a>
+                                            <a href="#!" class="ps-2" onclick="toggleEditContact()"><img src="images/edit-icon.svg" class="img-fluid" alt="edit-icon" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -116,7 +116,7 @@
                                         </div>
                                         <div class="contactBox_card_link">
                                             <a href="#!"><img src="images/delete-icon.svg" class="img-fluid" alt="delete-icon" /></a>
-                                            <a href="#!" class="ps-2"><img src="images/edit-icon.svg" class="img-fluid" alt="edit-icon" /></a>
+                                            <a href="#!" class="ps-2" onclick="toggleEditContact()"><img src="images/edit-icon.svg" class="img-fluid" alt="edit-icon" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -156,9 +156,47 @@
     </main>
 
 
-    <!-- Add Phone Number Form -->
-    <div class="sideMenu sideMenu-form sideMenuContactForm">
+      <!-- Add Phone Number Form -->
+      <div class="sideMenu sideMenu-form sideMenuContactForm">
         <a class="sideMenu_close" onclick="toggleAddContact()"><em class="icon-close-icon"></em></a>
+        <h2>Add new phone number</h2>
+        <p>Enter your phone number and add a title for it.</p>
+
+        <img src="images/contact_bg.png" class="img-fluid d-block mx-auto" alt="contact" />
+        <div class="commonForm">
+            <from>
+                <div class="form-group floating-group">
+                    <label class="floating-label">Title</label>
+                    <input type="text" class="form-control floating-control" />
+                </div>
+                
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group select2 w-100 floating-group">
+                            <label class="floating-label">Country</label>
+                            <select name="" id="" class="form-control customSelect floating-control">
+                                <option value="">Code</option>
+                                <option value="1" selected>+1</option>
+                            </select>
+                            <em class="icon-arrow_down form-icon"></em>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="form-group floating-group">
+                            <label class="floating-label">Phone Number</label>
+                            <input type="text" class="form-control floating-control" />
+                        </div>
+                    </div>  
+                </div>
+            
+                <button class="btn btn-primary w-100">Add Phone Number</button>
+            </from>
+        </div>
+    </div>
+
+    <!-- Edit Phone Number Form -->
+    <div class="sideMenu sideMenu-form sideMenuEditContactForm">
+        <a class="sideMenu_close" onclick="toggleEditContact()"><em class="icon-close-icon"></em></a>
         <div class=" d-flex flex-column justify-content-between h-100">
             <div>
                 <h2>Add new phone number</h2>
@@ -326,6 +364,11 @@
         function toggleAddressForm() {
             $('body').toggleClass('showAddresForm')
         }
+        function toggleEditContact() {
+            $('body').toggleClass('showEditContactForm')
+        }
+
+        
     </script>
 
 </body>

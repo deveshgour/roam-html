@@ -100,7 +100,7 @@
 }
 
 body{
-    &.showMenu, &.showContactForm, &.showAddresForm, &.showNotification{
+    &.showMenu, &.showContactForm, &.showAddresForm, &.showNotification, &.showEditContactForm{
         .sideMenubackdrop{
             opacity: 1;
             visibility: visible;
@@ -124,6 +124,11 @@ body{
     }
     &.showNotification{
         .sideMenuNotification{
+            right: 0;
+        }
+    }
+    &.showEditContactForm{
+        .sideMenuEditContactForm{
             right: 0;
         }
     }
