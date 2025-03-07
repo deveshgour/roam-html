@@ -1,40 +1,49 @@
 .header{
-  
-    .navbar-nav{
-        .nav-item{
-            height: 44px;
-            width: 44px;
-            background-color: color(50);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            @include transition(0.5s);
-            color: color(900);
-            &:not(:last-child){
-                margin-right: 8px;
-            }
-            .icon-bell-icon{
-                font-size: 20px;
-            }
-            .nav-link{
-                display: flex;
-                align-items: center;
-            }
-            &:hover{
-                background-color: color(500);
-                color: color(50);
+    background-color: #678983;
+    .navbar{
+        &-center{
+            .nav{
+                &-item{
+                    margin-right: 35px;
+                }
+                &-link{
+                    text-transform: uppercase;
+                    color: color(50);
+                    font-size: 16px;
+                    padding: 0;
+                    position: relative;
+                    font-family: font(md);
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        width:0;
+                        height: 2px;
+                        background-color: #092635;
+                        bottom: -6px;
+                        left: 0;
+                        opacity: 0;
+                        @include transition(0.3s)
+                    }
+                    &:hover, &.active{
+                        &:after{
+                            opacity: 1;
+                            width: 100%;
+                        }
+                    }
+                }
             }
         }
-    }
-    @include media-breakpoint-down(lg){
-        .navbar-brand{
-            img{
-                width: 160px;
+        .nav{
+            &-item{
+                .btn{
+                    text-transform: uppercase;
+                    font-family: font(bd);
+                    &-login{
+                        margin-right: 10px;
+                    }
+                }
             }
-        }
-        .navbar-nav{
-            flex-direction: row;
+           
         }
     }
 }

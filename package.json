@@ -1,5 +1,5 @@
 {
-  "name": "roam-html",
+  "name": "travmonde",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deveshgour/roam-html.git"
+    "url": "git+https://github.com/deveshgour/travmonde.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/deveshgour/roam-html/issues"
+    "url": "https://github.com/deveshgour/travmonde/issues"
   },
-  "homepage": "https://github.com/deveshgour/roam-html#readme",
+  "homepage": "https://github.com/deveshgour/travmonde#readme",
   "dependencies": {
     "grunt": "^1.6.1",
     "grunt-contrib-watch": "^1.1.0",

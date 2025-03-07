@@ -1,37 +1,14 @@
 .container {
-  @media(min-width:1199px) {
-    max-width: 780px;
-  }
+  max-width: 1340px;
 }
-.backBtn{
-  font-size: 20px;line-height: 30px;font-family: 'Inter-SemiBold';color: color(900);display: flex;
-  align-items: center;@include transition(all 0.4s);
-  em{padding-right: 20px;font-size: 16px;}
-  &:hover{
-    color: color(500)
-  }
-  @include media-breakpoint-down(xl) {
-    font-size: 18px;line-height: 26px;
-    em{font-size: 14px;padding-right: 15px;}
-  }
-  @include media-breakpoint-down(md) {
-    font-size: 16px;line-height: 22px;
-    em{font-size: 12px;padding-right: 10px;}
-  }
-  @include media-breakpoint-down(xs) {
-    font-size: 15px;line-height: 18px;
-  }
-}
-.deleteBtn{
-  font-size: 16px;line-height: 24px;color: #F04438;text-decoration: underline;
-  font-weight: 600;@include transition(all 0.4s);
-  &:hover{
-    color: color(550);text-decoration: underline;
-  }
-  @include media-breakpoint-down(xl) {
-    font-size: 15px;line-height: normal;
-  }
-  @include media-breakpoint-down(md) {
-    font-size: 14px;
-  }
+
+.heading{
+   font-size: 55px;
+   font-family: font(bd);
+   color: color(500);
+   text-align: center;
+   margin-bottom: 54px;
+   span{
+    color: #678983;
+   }
 }

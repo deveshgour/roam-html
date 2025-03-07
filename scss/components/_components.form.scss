@@ -1,20 +1,23 @@
 .commonForm{
     .form{
         &-group{
-            position: relative; margin-bottom: 34px;
-            &.focused{
+            position: relative; margin-bottom: 34px; 
+            &.focused, &.dateInput, input:autofill, input:-webkit-autofill{
                 .floating-label {
                     opacity: 1;
                     top: -8px;
                     left: 12px;
                     font-size: 12px;line-height: 16px;background-color: color(50);padding: 0 4px;
                 }
+            
             }
             .custom-label{
                 font-size: 16px;line-height: 24px;color: #1D2939;margin-bottom: 12px;
             }
             .formTxt{
                 font-size: 12px;line-height: 16px;color: #5E6368;margin-top: 3px;
+                position: absolute;
+                right: 0;
             }
             .checkbox-label{
                 font-size: 14px;line-height: 20px;color: color(900);display: inline-flex;
